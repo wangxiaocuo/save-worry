@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "dumi-template",
-  "version": "1.0.0",
+  "name": "@wangxiaocuo/save-worry",
+  "version": "0.1.0",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/dumi-template",
+    "url": "https://github.com/wangxiaocuo/save-worry",
     "branch": "main"
   },
   "lint-staged": {
