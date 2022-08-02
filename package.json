@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@wangxiaocuo/save-worry",
+  "name": "save-worry",
   "version": "0.1.0",
   "scripts": {
     "start": "dumi dev",

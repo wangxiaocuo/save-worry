@@ -21,7 +21,7 @@ group:
 ### 示例
 
 ```js
-import { trimTree } from '@wangxiaocuo/save-worry'
+import { trimTree } from 'save-worry'
 
 const tree = [
   {

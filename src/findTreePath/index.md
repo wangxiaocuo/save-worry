@@ -24,7 +24,7 @@ group:
 ### 示例
 
 ```js
-import { findTreePath } from '@wangxiaocuo/save-worry'
+import { findTreePath } from 'save-worry'
 
 const tree = [
   {

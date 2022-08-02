@@ -22,7 +22,7 @@ group:
 ### 示例
 
 ```js
-import { findTreeNode } from '@wangxiaocuo/save-worry'
+import { findTreeNode } from 'save-worry'
 
 const tree = [
   {

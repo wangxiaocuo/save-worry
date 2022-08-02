@@ -15,13 +15,13 @@ footer: Open-source MIT Licensed | Copyright © 2022<br />Powered by dumi
 #### 通过 npm/yarn 安装
 
 ```bash
-$ npm i @wangxiaocuo/save-worry -S
+$ npm i save-worry -S
 $ # or
-$ yarn add @wangxiaocuo/save-worry
+$ yarn add save-worry
 ```
 
 #### 通过 CDN 引入
 
 ```html
-<script src="https://unpkg.com/@wangxiaocuo/save-worry"></script>
+<script src="https://unpkg.com/save-worry"></script>
 ```
