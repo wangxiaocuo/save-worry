@@ -11,7 +11,7 @@ group:
 
 修剪树形数组，只保留符合条件的枝桠。
 
-`findTreePath(tree, func [, options])`
+`trimTree(tree, func [, options])`
 
 - `tree` - 必填项。树形数组
 - `func` - 必填项。回调函数，用于判断节点是否需要保留。返回值必须为 `boolean` 类型，为 `true` 则表示，该节点需要被保留
