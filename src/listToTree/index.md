@@ -8,7 +8,7 @@ group:
   order: 0
 ---
 
-## 数组转树 - listToTree
+## 扁平数组转树 - listToTree
 
 `listToTree(list [, options])`
 

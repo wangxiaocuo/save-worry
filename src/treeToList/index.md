@@ -7,7 +7,7 @@ group:
   title: Tree
 ---
 
-## 树转数组 - treeToList
+## 树转扁平数组 - treeToList
 
 `treeToList(tree [, options])`
 

@@ -7,7 +7,7 @@ group:
   title: Tree
 ---
 
-## 遍历树 - traversalTree
+## 遍历树形数组 - traversalTree
 
 遍历树形数组的每一个节点，每遍历一个节点，触发一下回调函数。支持不同的遍历模式。
 

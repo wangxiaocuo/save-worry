@@ -7,7 +7,7 @@ group:
   title: Tree
 ---
 
-## 查找树路径 - findTreePath
+## 查找树的路径 - findTreePath
 
 查找符合条件的一个或多个树路径。
 

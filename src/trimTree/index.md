@@ -7,7 +7,7 @@ group:
   title: Tree
 ---
 
-## 修剪树 - trimTree
+## 修剪树形数组 - trimTree
 
 修剪树形数组，只保留符合条件的枝桠。
 
