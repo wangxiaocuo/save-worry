@@ -13,10 +13,10 @@ group:
 
 `trimTree(tree, func [, options])`
 
-- `tree` - 必填项。树形数组
-- `func` - 必填项。回调函数，用于判断节点是否需要保留。返回值必须为 `boolean` 类型，为 `true` 则表示，该节点需要被保留
-- `options` - 可选项。配置选项
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
+- `tree` (Array)：必填项。树形数组
+- `func` (Function)：必填项。回调函数，用于判断节点是否需要保留。返回值必须为 `boolean` 类型，为 `true` 则表示，该节点需要被保留
+- `options` (Object)：可选项。配置选项
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
 
 ### 示例
 

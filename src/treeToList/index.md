@@ -11,12 +11,12 @@ group:
 
 `treeToList(tree [, options])`
 
-- `tree` - 必填项。树形数组
-- `options` - 可选项。配置选项
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
-  - `options.withLevel` - 是否在节点中标记当前节点的层级
-  - `options.levelField` - `withLevel` 为 `true` 时有效。指定节点的层级为节点对象的某个属性值，默认为 `_level`
-  - `options.rootLevel` - 根级节点的初始层级，默认为 0
+- `tree` (Array)：必填项。树形数组
+- `options` (Object)：可选项。配置选项
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
+  - `options.withLevel` (boolean)：是否在节点中标记当前节点的层级
+  - `options.levelField` (string)：`withLevel` 为 `true` 时有效。指定节点的层级为节点对象的某个属性值，默认为 `_level`
+  - `options.rootLevel` (number)：根级节点的初始层级，默认为 0
 
 ### 示例
 

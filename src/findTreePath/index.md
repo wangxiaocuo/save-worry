@@ -13,13 +13,13 @@ group:
 
 `findTreePath(tree, func [, options])`
 
-- `tree` - 必填项。树形数组
-- `func` - 必填项。回调函数，用于判断节点是否命中。返回值必须为 boolean 类型，为 true 则表示，该节点命中
-- `options` - 可选项。配置选项
-  - `options.setPathNodeAsSelf` - 是否设置路径节点为自己，如果是 `false`，则输出 `id` 数组
-  - `options.multiple` - 是否多选
-  - `options.idField` - 指定节点的索引 字段为节点对象的某个属性值，默认为 `id`
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
+- `tree` (Array)： 必填项。树形数组
+- `func` (Function)：必填项。回调函数，用于判断节点是否命中。返回值必须为 boolean 类型，为 true 则表示，该节点命中
+- `options` (Object)：可选配置选项
+  - `options.setPathNodeAsSelf` (boolean)：是否设置路径节点为自己，如果是 `false`，则输出 `id` 数组
+  - `options.multiple` (boolean)：是否多选
+  - `options.idField` (string)：指定节点的索引 字段为节点对象的某个属性值，默认为 `id`
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
 
 ### 示例
 

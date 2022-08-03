@@ -13,11 +13,11 @@ group:
 
 `traversalTree(tree, func [, options])`
 
-- `tree` - 必填项。树形数组
-- `func` - 必填项。回调函数，回调参数为节点 `node`
-- `options` - 可选项。配置选项
-  - `options.mode` - 遍历模式。可选取值为 `BF`（广度优先）、`DF-NLR`（深度优先-先序遍历）、`DF-LRN`（深度优先-后序遍历），默认为 `BF`
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
+- `tree` (Array)：必填项。树形数组
+- `func` (Function)：必填项。回调函数，回调参数为节点 `node`
+- `options` (Object)：可选配置选项
+  - `options.mode` (string)：遍历模式。可选取值为 `BF`（广度优先）、`DF-NLR`（深度优先-先序遍历）、`DF-LRN`（深度优先-后序遍历），默认为 `BF`
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
 
 ### 示例
 

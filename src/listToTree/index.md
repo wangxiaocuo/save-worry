@@ -12,14 +12,14 @@ group:
 
 `listToTree(list [, options])`
 
-- `list` - 必填项。扁平数组
-- `options` - 可选项。配置选项
-  - `options.idField` - 指定节点的索引字段为节点对象的某个属性值，默认为 `id`
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
-  - `options.parentField` - 指定节点的父级为节点对象的某个属性值，默认为 `pid`
-  - `options.rootPId` - 根级节点的父级 ID，此为是否是根级节点的判断依据，默认为 `undefined`
-  - `options.withLevel` - 是否在节点中标记当前节点的层级
-  - `options.levelField` - `withLevel` 为 `true` 时有效。指定节点的层级为节点对象的某个属性值，默认为 `_level`
+- `list` (Array)：必填项。扁平数组
+- `options` (Object)：可选配置选项
+  - `options.idField` (string)：指定节点的索引字段为节点对象的某个属性值，默认为 `id`
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
+  - `options.parentField` (string)：指定节点的父级为节点对象的某个属性值，默认为 `pid`
+  - `options.rootPId` (string | number | undefined | null)：根级节点的父级 ID，此为是否是根级节点的判断依据，默认为 `undefined`
+  - `options.withLevel` (boolean)：是否在节点中标记当前节点的层级
+  - `options.levelField` (string)：`withLevel` 为 `true` 时有效。指定节点的层级为节点对象的某个属性值，默认为 `_level`
 
 ### 示例
 

@@ -13,11 +13,11 @@ group:
 
 `findTreeNode(tree, func [, options])`
 
-- `tree` - 必填项。树形数组
-- `func` - 必填项。回调函数，用于判断节点是否命中。返回值必须为 `boolean` 类型，为 `true` 则表示，该节点命中
-- `options` - 可选项。配置选项
-  - `options.multiple` - 是否多选
-  - `options.childrenField` - 指定节点的孩子为节点对象的某个属性值，默认为 `children`
+- `tree` (Array)：必填项。树形数组
+- `func` (Function)：必填项。回调函数，用于判断节点是否命中。返回值必须为 `boolean` 类型，为 `true` 则表示，该节点命中
+- `options` (Object)：可选配置选项
+  - `options.multiple` (boolean)：是否多选。默认为 `false`
+  - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
 
 ### 示例
 
