@@ -7,16 +7,16 @@ interface IOptions {
   withLevel?: boolean
   levelField?: string
   rootLevel?: number
+  withPid?: boolean
+  pidField?: string
+  idField?: string
+  rootPid?: string | number | undefined | null
 }
 
 /**
  * 树形数组转为扁平数组
  * @param {Array} tree - 树形数组
  * @param {Object} options - 配置选项
- * @param {String} options.dropChildren - 转为扁平数组时，节点中的 children 字段是否丢弃，默认为 false
- * @param {String} options.withLevel - 是否在节点中标记当前节点的层级
- * @param {String} options.levelField - withLevel 为 true 时有效。指定节点的层级为节点对象的某个属性值，默认为 _level
- * @param {String} options.rootLevel - 根级节点的初始层级，默认为0
  */
 function treeToList(
   tree: INode[] = [],
@@ -24,7 +24,11 @@ function treeToList(
     childrenField: 'children',
     withLevel: false,
     levelField: '_level',
-    rootLevel: 0
+    rootLevel: 0,
+    withPid: false,
+    pidField: 'pid',
+    idField: 'id',
+    rootPid: undefined
   }
 ) {
   if (!tree) return []
@@ -40,24 +44,39 @@ function _processingTree(
   tree: INode[] = [],
   options: IOptions,
   result?: INode[],
-  level?: number
+  level?: number,
+  pid?: string | number | undefined | null
 ) {
   options = options || {}
 
   const childrenField = options.childrenField || 'children'
-  const levelField = options.levelField || '_level'
   const _result = result || []
+  const levelField = options.levelField || '_level'
   const _level = level || options.rootLevel || 0
+  const pidField = options.levelField || 'pid'
+  const idField = options.idField || 'id'
+  const _pid = pid || options.rootPid || undefined
 
   tree.forEach(node => {
     const newNode = { ...node }
     delete newNode[childrenField]
     _result.push(newNode)
+
     if (options.withLevel) {
-      node[levelField] = _level
+      newNode[levelField] = _level
     }
+    if (options.withPid) {
+      newNode[pidField] = _pid
+    }
+
     node[childrenField] &&
-      _processingTree(node[childrenField], options, _result, _level + 1)
+      _processingTree(
+        node[childrenField],
+        options,
+        _result,
+        _level + 1,
+        node[idField]
+      )
   })
   return _result
 }

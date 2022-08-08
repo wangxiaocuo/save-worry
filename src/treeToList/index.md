@@ -15,8 +15,12 @@ group:
 - `options` (Object)：可选项。配置选项
   - `options.childrenField` (string)：指定节点的孩子为节点对象的某个属性值，默认为 `children`
   - `options.withLevel` (boolean)：是否在节点中标记当前节点的层级
-  - `options.levelField` (string)：`withLevel` 为 `true` 时有效。指定节点的层级为节点对象的某个属性值，默认为 `_level`
-  - `options.rootLevel` (number)：根级节点的初始层级，默认为 0
+  - `options.levelField` (string)：`withLevel` 为 `true` 时有效。指定所标记层级的字段名，默认为 `_level`
+  - `options.rootLevel` (number)：`withLevel` 为 `true` 时有效。指定根级节点的初始层级，默认为 0
+  - `options.withPid` (boolean)：是否在节点中标记当前节点的层级
+  - `options.pidField` (string)：`withPid` 为 `true` 时有效。指定所标记父级 ID 的字段名，默认为 `pid`
+  - `options.idField` (string)：`withPid` 为 `true` 时有效。指定节点的 key 为节点对象的某个属性值，默认为 `id`
+  - `options.rootPid` (string)：`withPid` 为 `true` 时有效。指定根级节点的父级 ID，默认为 `undefined`
 
 ### 示例
 
